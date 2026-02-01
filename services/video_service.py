@@ -13,7 +13,7 @@ def extract_frames(video_path, fps=1):
         os.remove(os.path.join(FRAMES_DIR, f))
 
     cmd = [
-        FFMPEG, "-i", video_path,
+        FFMPEG, "-y","-i", video_path,
         "-vf", f"fps={fps}",
         f"{FRAMES_DIR}/frame_%04d.jpg"
     ]
@@ -23,7 +23,7 @@ def extract_frames(video_path, fps=1):
 
 def extract_audio(video_path):
     cmd = [
-        FFMPEG, "-i", video_path,
+        FFMPEG, "-y","-i", video_path,
         "-ac", "1", "-ar", "16000",
         AUDIO_PATH
     ]
