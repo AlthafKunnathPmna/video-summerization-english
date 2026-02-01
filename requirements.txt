@@ -6,4 +6,4 @@ easyocr
 pillow
 imageio-ffmpeg
 google-generativeai
-opencv-python
+opencv-python-headless
