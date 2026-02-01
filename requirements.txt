@@ -1,0 +1,9 @@
+streamlit
+torch
+whisper
+transformers
+easyocr
+pillow
+imageio-ffmpeg
+google-generativeai
+opencv-python
